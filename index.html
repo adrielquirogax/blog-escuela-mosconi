@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela General Ingeniero Enrique Mosconi</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav>
+        <h2>Escuela General Ingeniero Enrique Mosconi</h2>
+        <a href="#inicio">Inicio</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#bienvenida">Bienvenida</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#contacto">Contacto</a>
+        <button id="btn-modo" class="btn-modo">🌙 Modo Oscuro</button>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div>
+            <h1>Bienvenidos a la Escuela General Ingeniero Enrique Mosconi</h1>
+            <p>Formando estudiantes para el futuro</p>
+            <a href="#bienvenida" class="btn-hero">Conocer la escuela</a>
+        </div>
+        <img src="foto.jpg" alt="Escuela">
+    </section>
+
+    <h2 id="noticias" class="titulo-seccion">Últimas noticias</h2>
+    
+    <div class="contenedor">
+        <!-- Tarjeta 1: Feria de Ciencias -->
+        <div class="noticia">
+            <img src="meme.jpg" alt="Feria de ciencias">
+            <h2>Feria de Ciencias</h2>
+            <p>Este viernes se realizará la feria de ciencias de nuestra escuela.</p>
+            <a href="feria.html" class="btn-noticia">Leer más</a>
+        </div>
+
+        <!-- Tarjeta 2: Torneo de Fútbol -->
+        <div class="noticia">
+            <img src="Kawai.jpg" alt="Torneo de fútbol">
+            <h2>Torneo de Fútbol</h2>
+            <p>Comienza el campeonato entre cursos.</p>
+            <a href="futbol.html" class="btn-noticia">Leer más</a>
+        </div>
+
+        <!-- Tarjeta 3: Acto Escolar -->
+        <div class="noticia">
+            <img src="xdxd.jpg" alt="Acto escolar">
+            <h2>Acto Escolar</h2>
+            <p>Se realizará el acto por el aniversario de la institución.</p>
+            <a href="acto.html" class="btn-noticia">Leer más</a>
+        </div>
+    </div>
+
+    <!-- Sección de Bienvenida -->
+    <div class="bienvenida" id="bienvenida">
+        <h2>Bienvenidos</h2>
+        <p>En esta página compartiremos noticias, eventos y actividades escolares.</p>
+    </div>
+
+    <!-- Lista de Actividades -->
+    <div class="lista-actividades" id="actividades">
+        <h2>Actividades recientes</h2>
+        <ul>
+            <li>Comenzó la feria de ciencias</li>
+            <li>Nuevo torneo de fútbol</li>
+            <li>Inscripciones abiertas de informática</li>
+            <li>Taller de IA</li>
+        </ul>
+        <a href="https://www.youtube.com" target="_blank" class="link-youtube">Ir a YouTube</a>
+    </div>
+
+   <!-- Sección de Contacto -->
+    <div class="contacto-seccion" id="contacto">
+        <h2>Contacto</h2>
+        <form id="mi-formulario">
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+            <button type="submit" class="btn-noticia">Enviar Mensaje</button>
+        </form>
+        <!-- Mensaje directo en pantalla en lugar de alerta congelante -->
+        <p id="mensaje-estado" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Blog Escolar. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
